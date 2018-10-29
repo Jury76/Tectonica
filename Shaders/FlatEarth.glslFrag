@@ -1,0 +1,10 @@
+//#version 300 es
+precision highp float ;
+precision lowp  int   ;
+
+void main()
+{
+  vec4 col = vec4 ( 0.4, 0.2, 0.2, 1.0 ) ;
+  gl_FragData[0] = col ;
+}
+
