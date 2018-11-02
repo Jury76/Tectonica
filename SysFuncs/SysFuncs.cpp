@@ -73,7 +73,7 @@ void OLCdelete ( void *ptr )
 }
 
 
-#if 1
+#ifdef TECTONICA_MEMORY_DEBUG
 #include <new>
 void *operator new       ( size_t count ) throw (std::bad_alloc) { return OLCnew ( count ) ; }
 void *operator new    [] ( size_t count ) throw (std::bad_alloc) { return OLCnew ( count ) ; }
