@@ -23,13 +23,13 @@ VersionManager::~VersionManager ()
 
 int VersionManager::GetMajor() const { return 0 ; }
 int VersionManager::GetMinor() const { return 0 ; }
-int VersionManager::GetRevision() const { return 122 ; }
+int VersionManager::GetRevision() const { return 123 ; }
 #ifdef DEBUG
 bool VersionManager::isDebug () const { return true ; }
-const char *VersionManager::GetName() const { return "0.0.0122-D" ; }
+const char *VersionManager::GetName() const { return "0.0.0123-D" ; }
 #else
 bool VersionManager::isDebug () const { return false ; }
-const char *VersionManager::GetName() const { return "0.0.0122" ; }
+const char *VersionManager::GetName() const { return "0.0.0123" ; }
 #endif
 const char *VersionManager::GetBuildTime() const { return xstr(DATE) ; }
 
